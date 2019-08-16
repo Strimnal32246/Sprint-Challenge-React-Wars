@@ -5,7 +5,7 @@ React JS is a javascript library that aims to solve reusability and simplifies U
 1. What does it mean to think in react?
 means to use the advantages of having css, html, and js all in one spot to maximize reusability
 1. Describe state.
-
+ it is kind  of like an internal data-set which affects the rendering of components.
 2. Describe props.
 embedded components should only pass data from the state using props Props are like state only immutable
 3. What are side effects, and how do you sync effects in a React component to state or prop changes?
