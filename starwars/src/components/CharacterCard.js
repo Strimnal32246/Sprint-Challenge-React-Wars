@@ -1,11 +1,10 @@
 import React from "react";
-import CharacterGender from "./characterGender";
-import CharacterBirthYear from "./characterBirthYear";
+import CharacterGender from "./CharacterGender";
+import CharacterBirthYear from "./CharacterBirthYear";
 import styled from "styled-components";
-import CharacterHomeWorld from "./characterHomeWorld";
-import CharacterEyeColor from "./characterEyeColor";
-import CharacterHairColor from "./characterHairColor";
-import CharacterHeight from "./characterHeight";
+import CharacterEyeColor from "./CharacterEyeColor";
+import CharacterHairColor from "./CharacterHairColor";
+import CharacterHeight from "./CharacterHeight";
 
 const StyledCards = styled.div`
   border: 1px solid black;
@@ -14,7 +13,7 @@ const StyledCards = styled.div`
   background: rgba(123, 163, 13, 0.3);
 `;
 const StyledNames = styled.h3`
-  color: tan;
+  color: red;
 `;
 
 export default function CharacterCards(props) {
@@ -24,7 +23,6 @@ export default function CharacterCards(props) {
       <StyledNames>Name: {props.people.name}</StyledNames>
       <CharacterGender gender={props.people.gender} />
       <CharacterBirthYear birthyear={props.people.birth_year} />
-      <CharacterHomeWorld homeworld={props.people.homeworld} />
       <CharacterHairColor haircolor={props.people.hair_color} />
       <CharacterEyeColor eyecolor={props.people.eye_color} />
       <CharacterHeight height={props.people.height} />
