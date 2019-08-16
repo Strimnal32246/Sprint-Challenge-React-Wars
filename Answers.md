@@ -7,6 +7,6 @@ means to use the advantages of having css, html, and js all in one spot to maxim
 1. Describe state.
  it is kind  of like an internal data-set which affects the rendering of components.
 2. Describe props.
-embedded components should only pass data from the state using props Props are like state only immutable
+are properties passed from the component into their inner function. it is a communicationchannel between components that arebetween parent and child. it can be usedto control that data in the component.
 3. What are side effects, and how do you sync effects in a React component to state or prop changes?
 A side effect is anything that affects something outside the scope of the function being executed. You sync them to state by calling axios, and you sync them to prop changes by using useEffect()
